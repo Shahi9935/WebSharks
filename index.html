@@ -1,27 +1,33 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>Web Sharks</title>
 <link rel="stylesheet" href="cssfile.css">
-<script src="jsfile.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--Check whether its correct-->
 <link rel="shortcut icon" href="http://www.iconarchive.com/download/i89995/icons8/windows-8/Animals-Shark.ico">
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 </head>
-<body class="container-fluid">
+<body class="container-fluid"><br>
 <div class="mainhead ml-auto mr-auto text-center"><h1>Web Sharks</h1></div>
 <br><br><br>
 <div class="gamearea">
+  <div class="mylives">Lives=5</div>
+<div class="me" id="me"></div>
+  <div class="ob1 obstacle"></div>
+  <div class="ob2 obstacle"></div>
+  <div class="ob3 obstacle"></div>
+<div class="finishline"></div>
 
 </div>
 <br>
 <div class="bs ml-auto mr-auto text-center">
-  <h3>
-  <button class="btn">L</button>
-  <button class="btn">R</button>
-</h3>
+  <pre><button class="btn" id="ln">L</button>    <button class="btn" id="rn">R</button></pre>
 </div>
 <div class="myp ml-auto mr-auto text-center">A SHAHI PRODUCTION</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--Check whether its correct-->
+
+<script type='text/javascript' src='jsfile.js'></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 body{
-  background-image: url("https://www.planwallpaper.com/static/images/cool-background.jpg");
+  background-image: url("http://www.planwallpaper.com/static/images/background-wallpapers-32_NRz0mTd.jpg");
 }
 .mainhead
 {
@@ -15,14 +15,54 @@ body{
   margin-left:auto;
   margin-right:auto;
   height:250px;
+  position:relative;
 }
+.me
+{
+  background-color:red;
+  height:30px;
+  width:30px;
+  margin-left:0px;
+  margin-top:110px;
+  position:absolute;
+}
+.mylives
+{
+  position:absolute;
+}
+.finishline
+{
+  background-color:green;
+  height:250px;
+  width:10px;
+  float:right;
+}
+.obstacle
+{
+  background-color:blue;
+  width:30px;
+  height:30px;
+  position:absolute;
+  margin-top:10px;
+}
+.ob1{
+  margin-left:70px;
+
+}
+.ob2{
+  margin-left:140px;
+}
+.ob3{
+  margin-left:210px;
+}
+
 .bs
 {
   width:300px;
 }
 .myp
 {
-  color:white;
+  color:red;
   width:300px;
 
 }
