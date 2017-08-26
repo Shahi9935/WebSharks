@@ -19,7 +19,7 @@ body{
 }
 .me
 {
-  background-color:red;
+  background-image:url("https://res.cloudinary.com/shahi9935/image/upload/t_media_lib_thumb/v1503750665/index_i0a3t8.jpg");
   height:30px;
   width:30px;
   margin-left:0px;
@@ -55,6 +55,7 @@ body{
   height:30px;
   position:absolute;
   margin-top:10px;
+  background-image: url("https://res.cloudinary.com/shahi9935/image/upload/t_media_lib_thumb/v1503750299/sharku_izz5fq.jpg");
 }
 .ob1{
   margin-left:70px;
