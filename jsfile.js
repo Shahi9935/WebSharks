@@ -522,7 +522,7 @@ function resetsitu()
   }
 }
 
-$(document).keyup(function(e) {
+$(document).keydown(function(e) {
         if (e.which === 39) {
 
             $('#me').css('margin-left', '+=10px');
@@ -549,7 +549,7 @@ $(document).keyup(function(e) {
             }
         }
     });
-    $(document).keyup(function(e) {
+    $(document).keydown(function(e) {
             if (e.which === 68) {
 
                 $('#me').css('margin-left', '+=10px');
@@ -575,7 +575,7 @@ $(document).keyup(function(e) {
                 }
             }
         });
-        $(document).keyup(function(e) {
+        $(document).keydown(function(e) {
                     if (e.which ===65) {
                       if(buttuflag==0)
                       {$('#me').css('margin-left', '-=10px');
@@ -587,7 +587,7 @@ $(document).keyup(function(e) {
                       }
                     }
                 });
-$(document).keyup(function(e) {
+$(document).keydown(function(e) {
             if (e.which === 37) {
               if(buttuflag==0)
               {$('#me').css('margin-left', '-=10px');
