@@ -28,7 +28,11 @@ body{
 }
 .mylives
 {
-  position:absolute;
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+
+  color:white;
 }
 .finishline
 {
