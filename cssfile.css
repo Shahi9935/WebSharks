@@ -34,6 +34,13 @@ body{
 
   color:white;
 }
+.currlevel{
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+
+  color:white;
+}
 .finishline
 {
   background-color:green;
@@ -66,7 +73,7 @@ body{
 }
 .myp
 {
-  color:red;
+  color:white;
   width:300px;
 
 }

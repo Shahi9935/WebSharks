@@ -68,25 +68,49 @@ if(pos3<20)
 if((myleft>40&&myleft<100)&&(pos1>80&&pos1<140))
 {
   life--
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
+
   clearInterval(x);
 }
 if((myleft>110&&myleft<170)&&(pos2>80&&pos2<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-$(".mylives").html("Lives = "+life);
-resetsitu();
+
+    life--
+    if(life==0)
+    {
+      alert("GAME OVER");
+      myveryownrestartfunc();
+    }
+    else {
+      alert("Ouch!! Lives left = "+life);
+      $(".mylives").html("Lives = "+life);
+      resetsitu();
+    }
   clearInterval(x);
 }
 if((myleft>180&&myleft<240)&&(pos3>80&&pos3<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+
+    life--
+    if(life==0)
+    {
+      alert("GAME OVER");
+      myveryownrestartfunc();
+    }
+    else {
+      alert("Ouch!! Lives left = "+life);
+      $(".mylives").html("Lives = "+life);
+      resetsitu();
+    }
   clearInterval(x);
 }
 },100);
@@ -100,14 +124,22 @@ $("#rn").on("click",function()
  buttuflag=0;
   if(myleft==260)
   {
-    level++;
-    alert("You Won");
-    if(level==2)
-    winsitu();
-    else if(level==3)
-    winsitu3();
-  }
 
+      if(level==3)
+      {alert("DAMN!!.. You're Awesome");
+        myveryownrestartfunc();
+    }
+      else {
+        level++;
+        $(".currlevel").html("Level = "+level);
+        alert("You Won");
+        if(level==2)
+        winsitu();
+        else if(level==3)
+        winsitu3();
+
+  }
+}
 });
 $("#ln").on("click",function()
 {
@@ -183,31 +215,52 @@ if(pos3<20)
 if((myleft>40&&myleft<100)&&(pos1>80&&pos1<140))
 {
   life--
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 if((myleft>110&&myleft<170)&&(pos2>80&&pos2<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-$(".mylives").html("Lives = "+life);
-resetsitu();
+  life--
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 if((myleft>180&&myleft<240)&&(pos3>80&&pos3<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  life--
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 },100);
 
 }
-function winsitu4()
+function winsitu3()
 {
   myleft=0;
   pos1=10;
@@ -216,7 +269,7 @@ function winsitu4()
   posflag=1;
   posflag2=1;
   posflag3=1;
-  $(".myp").html("nere");
+
   document.getElementById("ob1").style.marginTop = "10px";
   document.getElementById("ob2").style.marginTop = "0px";
   document.getElementById("ob3").style.marginTop = "0px";
@@ -282,28 +335,49 @@ if(pos3<20)
 if((myleft>40&&myleft<100)&&(pos1>80&&pos1<140))
 {
   life--
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 if((myleft>110&&myleft<170)&&(pos2>80&&pos2<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-$(".mylives").html("Lives = "+life);
-resetsitu();
+  life--
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 if((myleft>180&&myleft<240)&&(pos3>80&&pos3<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  life--
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
-},200);
+},100);
 
 }
 
@@ -381,25 +455,46 @@ if(pos3<20)
 if((myleft>40&&myleft<100)&&(pos1>80&&pos1<140))
 {
   life--
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 if((myleft>110&&myleft<170)&&(pos2>80&&pos2<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-$(".mylives").html("Lives = "+life);
-resetsitu();
+  life--
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 if((myleft>180&&myleft<240)&&(pos3>80&&pos3<140))
 {
-  life--;
-  alert("Ouch!! Lives left = "+life);
-  $(".mylives").html("Lives = "+life);
-  resetsitu();
+  life--
+  if(life==0)
+  {
+    alert("GAME OVER");
+    myveryownrestartfunc();
+  }
+  else {
+    alert("Ouch!! Lives left = "+life);
+    $(".mylives").html("Lives = "+life);
+    resetsitu();
+  }
   clearInterval(x);
 }
 },100);
@@ -426,10 +521,7 @@ function resetsitu()
     winsitu3();
   }
 }
-function winsitu3()
-{
 
-}
 $(document).keyup(function(e) {
         if (e.which === 39) {
 
@@ -438,12 +530,22 @@ $(document).keyup(function(e) {
            buttuflag=0;
             if(myleft==260)
             {
-              alert("You Won");
-              level++;
-              if(level==2)
-              winsitu();
-              else if(level==3)
-              winsitu3();
+              if(level==3)
+              {alert("DAMN!!.. You're Awesome");
+                myveryownrestartfunc();
+            }
+              else {
+                level++;
+                $(".currlevel").html("Level = "+level);
+                alert("You Won");
+                if(level==2)
+                winsitu();
+                else if(level==3)
+                winsitu3();
+
+              }
+
+
             }
         }
     });
@@ -455,13 +557,21 @@ $(document).keyup(function(e) {
                buttuflag=0;
                 if(myleft==260)
                 {
-                  level++;
-                  alert("You Won");
-                  if(level==2)
-                  winsitu();
-                  else if(level==3)
-                  winsitu3();
-                  $(".myp").html(level);
+                  if(level==3)
+                  {alert("DAMN!!.. You're Awesome");
+                    myveryownrestartfunc();
+                }
+                  else {
+                    level++;
+                    $(".currlevel").html("Level = "+level);
+                    alert("You Won");
+                    if(level==2)
+                    winsitu();
+                    else if(level==3)
+                    winsitu3();
+
+                  }
+
                 }
             }
         });
@@ -494,3 +604,8 @@ $(document).keyup(function(e) {
                 myveryownrestartfunc();
             }
         });
+        function myveryownrestartfunc()
+        {
+
+        window.location.reload();
+        }
